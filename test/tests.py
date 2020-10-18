@@ -39,9 +39,9 @@ tests = [ {'description': 'This test will run first.',
         'expected': [('PORTC',0x09)],
     },
     {'description': 'This test will run last.',
-    'steps': [ {'inputs': [('PINA', 0xFF),('PINB',0xFF)],'iterations': 1}, # Set PIN to val then run one iteration
+    'steps': [ {'inputs': [('PINA', 0x00),('PINB',0x03)],'iterations': 1}, # Set PIN to val then run one iteration
         ],
-        'expected': [('PORTC',0x10)],
+        'expected': [('PORTC',0x02)],
     }
     ]
 # Optionally you can add a set of "watch" variables these need to be global or static and may need
