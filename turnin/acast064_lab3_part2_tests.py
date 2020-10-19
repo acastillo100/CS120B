@@ -21,12 +21,12 @@ tests = [ {'description': 'This test will run first.',
     {'description': 'This test will run second.',
     'steps': [ {'inputs': [('PINA', 0x02)],'iterations': 1}, # Set PIN to val then run one iteration
         ],
-        'expected': [('PORTC',0x60)],
+        'expected': [('PORTC',0x20)],
     },
     {'description': 'This test will run third.',
     'steps': [ {'inputs': [('PINA', 0x03)],'iterations': 1}, # Set PIN to val then run one iteration
         ],
-        'expected': [('PORTC',0x70)],
+        'expected': [('PORTC',0x30)],
     },
     {'description': 'This test will run fourth.',
     'steps': [ {'inputs': [('PINA', 0x05)],'iterations': 1}, # Set PIN to val then run one iteration

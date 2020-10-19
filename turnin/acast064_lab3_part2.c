@@ -31,9 +31,9 @@ int main(void) {
 		if (countA == 0x00)
 		       PORTC = 0x00;
 		if (countA > 0x00 && countA <= 0x02)
-			PORTC = 0x60;
+			PORTC = 0x20;
 		if (countA > 0x02 && countA <= 0x04)
-			PORTC = 0x70;
+			PORTC = 0x30;
 		if (countA > 0x04 && countA <= 0x06)
 			PORTC = 0x38;
 		if (countA > 0x06 && countA <= 0x09)
